@@ -2,7 +2,7 @@ name: Every 5 Minutes Cron
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Ejecuta todos los días a las 00:00 UTC
+    - cron: */5 * * * *  # Ejecuta una vez cada 5 minutos
 
 jobs:
   run-cron:
