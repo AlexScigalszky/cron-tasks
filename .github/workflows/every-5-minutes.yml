@@ -2,7 +2,7 @@ name: Every 5 Minutes Cron
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: '*/5 * * * *'
 jobs:
   run-cron:
     runs-on: ubuntu-latest
