@@ -1,0 +1,12 @@
+name: Every Push/commit
+on: push
+jobs:
+  run-cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync Node 1
+        run: curl -X GET https://not-centralized-node-1.onrender.com/sync
+      - name: Sync Node 2
+        run: curl -X GET https://not-centralized-node-2.onrender.com/sync
+      - name: Sync Node 3
+        run: curl -X GET https://not-centralized-node-3.onrender.com/sync
