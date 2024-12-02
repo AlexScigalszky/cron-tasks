@@ -1,4 +1,4 @@
-name: Run Daily Cron
+name: Every 5 Minutes Cron
 
 on:
   schedule:
